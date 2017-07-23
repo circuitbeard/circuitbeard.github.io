@@ -34,29 +34,20 @@ h2,.h2
     @include font-size(35px, 35px);
 }
 
-h3,.h3,
-h4,.h4
-{
-    @include font-size(25px, 30px);
-}
-
-h5,.h5
+h3,.h3
 {
     @include font-size(20px, 26px);
 }
 
-h6,.h6
+h4,.h4,
+h5,.h5
 {
-    @include font-size(17px, 22px);
+    @include font-size(16px, 26px);
 }
 
 @media screen and (min-width: 48.5em)
 {
     h1,.h1
-    {
-        @include font-size(60px, 60px);
-    }
-
     h2,.h2
     {
         @include font-size(48px, 48px);
@@ -64,22 +55,17 @@ h6,.h6
 
     h3,.h3
     {
-        @include font-size(32px, 32px);
+        @include font-size(25px, 30px);
     }
 
     h4,.h4
     {
-        @include font-size(25px, 30px);
+        @include font-size(20px, 26px);
     }
 
     h5,.h5
     {
-        @include font-size(20px, 26px);
-    }
-
-    h6,.h6
-    {
-        @include font-size(17px, 22px);
+        @include font-size(16px, 22px);
     }
 }
 
