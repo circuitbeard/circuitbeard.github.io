@@ -1,11 +1,15 @@
 ---
 layout: post
-title: Rombus-CT - Araspberry Pi powered mini cocktail arcade
+title: Rombus-CT - A Raspberry Pi powered mini cocktail arcade
 masthead: /media/mh_rombusct.jpg
 disqus_id: 1448
+tags:
+ - raspberrypi
+ - picade
+ - rombus
 ---
 
-If you follow my blog, you may recall my ROMBUS3000 project from a few months ago, which went down quite the storm. This was my attempt at fulfilling a long lived desire to create an arcade machine.
+If you follow my blog, you may recall my [ROMBUS3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine) project from a few months ago, which went down quite the storm. This was my attempt at fulfilling a long lived desire to create an arcade machine.
 
 Well, when looking to create something to take to an event I am helping organise, [CodeCabin](http://codecab.in), an arcade machine seemed the perfect fit. I could of course just take the ROMBUS3000, however I thought it would be much more fun to create a 2 player arcade so that multiple people can play together.
 
