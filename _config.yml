@@ -64,6 +64,7 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate # Allow pagination of collections
+  - jekyll-redirect-from # Redirect from old url structure
 
 # Exclude these files from your production _site
 exclude:

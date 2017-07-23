@@ -7,6 +7,9 @@ tags:
  - raspberrypi
  - picade
  - rombus
+redirect_from: 
+ - /blog/rombus-ct-a-raspberry-pi-powered-mini-cocktail-arcade
+ - /rombusct
 ---
 
 If you follow my blog, you may recall my [ROMBUS3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine) project from a few months ago, which went down quite the storm. This was my attempt at fulfilling a long lived desire to create an arcade machine.

@@ -7,6 +7,9 @@ tags:
  - raspberrypi
  - picade
  - rombus
+redirect_from: 
+ - /blog/rombus3000-a-raspberry-pi-mini-arcade-machine
+ - /rombus3000
 ---
 
 Like many makers, a mame arcade machine has been on my list of things to build for quite a while. Recently though I had the pleasure of catching up with the [Pimoroni](http://pimoroni.com/) guys and got to check out their [PiCade arcade machine](https://shop.pimoroni.com/products/picade) they launched on [Kickstarter a few months back](https://www.kickstarter.com/projects/pimoroni/picade-the-arcade-cabinet-kit-for-your-raspberry-p). Needless to say, playing around with the PiCade made my urge to build an arcade machine bubble back to the surface. I toyed with just buying one of the PiCade kits, which really are exceptional, but that's not really my style as I tend to like to hack / re-purpose old technology, so instead I decided to modify an old 80's desktop computer game instead.
