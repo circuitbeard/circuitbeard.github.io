@@ -8,7 +8,7 @@
     @extend .bare;
 
     margin: 0 auto;
-    padding-bottom: $global-spacing-unit;
+    padding-bottom: $global-spacing-unit-small;
 
     > li {
         display: inline-block;
@@ -24,6 +24,11 @@
         color: white;
     }
 
+}
+
+.copyright {
+    @include font-size(10px, 10px);  
+    color: darken($brand-color-teal, 10%);
 }
 
 .post {
