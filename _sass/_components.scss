@@ -97,7 +97,7 @@
     }
 }
 
-.wide-content {
+.wide-content-core {
     //margin-left: $global-spacing-unit-small*-1;
     //margin-right: $global-spacing-unit-small*-1;
     margin-left: 0;
@@ -112,8 +112,16 @@
     }
 }
 
+.wide-content {
+    @extend .wide-content-core;
+
+    & > a > img {
+        max-width: 100%;
+    }
+}
+
 pre[class*="language-"] {
-    @extend .wide-content;
+    @extend .wide-content-core;
   
     border: 0;
     border-radius: 0;
@@ -136,7 +144,7 @@ pre[class*="language-"] {
 }
 
 .video {
-    @extend .wide-content;
+    @extend .wide-content-core;
     @extend .ratio--16x9;
 
     iframe {
