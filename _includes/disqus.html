@@ -8,6 +8,8 @@
 	    {% if page.disqus_id %}
 	    var disqus_identifier = '{{ page.disqus_id }}';
 		{% endif %}
+	    var disqus_identifier = '{{ page.id }}';
+		{% endif %}
 
 	    (function() {
 	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
