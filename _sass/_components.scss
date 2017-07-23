@@ -122,6 +122,15 @@ pre[class*="language-"] {
     width: auto;
 }
 
+.video {
+    @extend .wide-content;
+    @extend .ratio--16x9;
+
+    iframe {
+        @extend .ratio__content;
+    }
+}
+
 .pagination {
     margin: $global-spacing-unit-small;
     background-color: rgba(255,255,255,.1);
