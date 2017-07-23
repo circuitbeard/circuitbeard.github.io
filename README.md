@@ -1,6 +1,6 @@
 # Circuitbeard Website
 
-The code for the circuitbeard website using github pages
+The code for the circuitbeard website using Github Pages + Jekyll
 
 ## Useful Snippets
 
