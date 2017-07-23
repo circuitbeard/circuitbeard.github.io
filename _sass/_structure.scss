@@ -176,6 +176,10 @@ body {
         @include hocus {
             color: darken($brand-color-teal, 10%);
         }
+
+        &.active {
+            color: darken($brand-color-teal, 10%);
+        }
     }
 }
 
