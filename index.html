@@ -5,7 +5,7 @@ layout: default
 {% for post in site.posts %}
 	<article class="post">
 		{% if post.masthead %}
-	    <img class="post__img" src="{{ post.masthead }}}" alt="" />
+	    <img class="post__img" src="{{ post.masthead }}" alt="" />
 	    {% endif %}
 	    <div class="post__content">
 	        <div class="post__date">{{ post.date | date: "%B %e, %Y" }}</div>
