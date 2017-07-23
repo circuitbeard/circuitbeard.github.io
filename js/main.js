@@ -70,6 +70,8 @@
         
     };
 
+    initCommon();
+
     enquire.register('screen and (min-width: 62.001em)', {
         match: function () {
             initNotTablet();
@@ -92,7 +94,5 @@
             initMobile();
         }
     });
-
-    initCommon();
 
 })(jQuery);
