@@ -25,7 +25,7 @@ Probably the longest running phase was the designing phase. This was all done in
 [![Inkscape 1](/media/rombusct/01.jpg)](/media/rombusct/01.jpg)
 [![Inkscape 2](/media/rombusct/02.jpg)](/media/rombusct/02.jpg)
 [![Inkscape 3](/media/rombusct/03.jpg)](/media/rombusct/03.jpg)
-</div>
+</div> 
 
 A requirement of the design was that it must be able to be cut on my A3 laser cutter, so this pretty much defined the overall size of the top.
 
