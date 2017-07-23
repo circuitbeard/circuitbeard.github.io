@@ -4,7 +4,12 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    
+        {% if page.title %}
+        <title>{{ page.title }} | {{ site.name }}</title>
+        {% else %}
+        <title>{{ site.name }} – {{ site.description }}</title>
+        {% endif %}
         
         {% include meta.html %}
 
