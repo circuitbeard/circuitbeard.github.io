@@ -21,9 +21,11 @@ When I had been looking to make an arcade machine many years ago, it was a cockt
 
 Probably the longest running phase was the designing phase. This was all done in inkscape, and started by drawing out a few core components that I knew I wanted to use, such as the ZIPPYY joysticks (they have a nice short shaft, and are nice and cheap whilst still feeling "arcady"), the Sanwa 24mm diameter buttons (smaller than the standard arcade buttons) and the 8” monitor available from Pimoroni. With those in mind, the case design was built up around them.
 
-<div class="gallery" markdown="1">[![Inkscape 1](/media/rombusct/01.jpg)](/media/rombusct/01.jpg)
+<div class="gallery" markdown="1">
+[![Inkscape 1](/media/rombusct/01.jpg)](/media/rombusct/01.jpg)
 [![Inkscape 2](/media/rombusct/02.jpg)](/media/rombusct/02.jpg)
-[![Inkscape 3](/media/rombusct/03.jpg)](/media/rombusct/03.jpg)</div>
+[![Inkscape 3](/media/rombusct/03.jpg)](/media/rombusct/03.jpg)
+</div>
 
 A requirement of the design was that it must be able to be cut on my A3 laser cutter, so this pretty much defined the overall size of the top.
 

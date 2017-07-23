@@ -45,6 +45,8 @@
             $("body").toggleClass("surround--open");
         });
 
+        $(".gallery > p > *").unwrap();
+
         var galleryCount = 0;
         $(".gallery").each(function(idx, itm){
             $(itm).children().each(function(idx2, itm2){
