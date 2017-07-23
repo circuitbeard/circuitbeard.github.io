@@ -2,15 +2,14 @@
 layout: page
 title: About
 permalink: /about/
+masthead: /media/mh_about.jpg
 show_in_nav: true
 ---
 
-Some information about you!
+Hey,
 
-### More Information
+My name is Matt Brailsford (aka Circuitbeard)
 
-A place to include any other types of information that you'd like to include about yourself.
+This site is all about the things I do in my spare time, which usually involves electronics or making in varying senses of the word. If you are into making and hacking, I hope you’ll find the site interesting.
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Matt
