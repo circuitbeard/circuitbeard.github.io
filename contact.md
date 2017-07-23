@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+show-in-nav: true
 ---
 
 Some information about you!
