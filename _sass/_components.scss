@@ -1,0 +1,149 @@
+/* 
+    ===============================
+    STRUCTURE
+    ===============================
+*/
+
+.social-links {
+    @extend .bare;
+
+    margin: 0 auto;
+    padding-bottom: $global-spacing-unit;
+
+    > li {
+        display: inline-block;
+    }
+}
+
+.social-links__link {
+
+    @include font-size(20px, 20px);
+    color: rgba(255,255,255,.4);
+
+    @include hocus {
+        color: white;
+    }
+
+}
+
+.post {
+    margin: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em){
+        margin: $global-spacing-unit;
+    }
+}
+
+.post__img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.post__content {
+    padding: $global-spacing-unit-small;
+    background-color: white;
+
+    @media screen and (min-width: 48.5em){
+        padding: $global-spacing-unit;
+        padding-right: 150px;
+    }
+}
+
+.post__date {
+    text-transform: uppercase;
+    color: $brand-color-grey-dark;
+    opacity: .5;
+}
+
+.post__heading {
+    text-transform: uppercase;
+}
+
+.share {
+    @include font-size(20px, 20px);
+
+    padding-top: $global-spacing-unit;
+
+    a {
+        color: $brand-color-grey;
+
+        @include hocus {
+            color: $brand-color-teal;
+        }
+    }
+}
+
+.comments {
+    background-color: #f5f5f5;
+    padding: $global-spacing-unit-small;
+
+    @media screen and (min-width: 48.5em){
+        padding: $global-spacing-unit;
+        padding-right: 150px;
+    }
+}
+
+.wide-content {
+    margin-left: $global-spacing-unit-small*-1;
+    margin-right: $global-spacing-unit-small*-1;
+    margin-bottom: $global-spacing-unit-small;  
+
+    @media screen and (min-width: 48.5em){
+        margin-left: $global-spacing-unit*-1;
+        margin-right: -150px;
+        margin-bottom: $global-spacing-unit;  
+    }
+}
+
+pre[class*="language-"] {
+    @extend .wide-content;
+  
+    border: 0;
+    border-radius: 0;
+}
+
+.gallery {
+    @extend .wide-content;
+      
+    width: auto;
+}
+
+.pagination {
+    margin: $global-spacing-unit-small;
+    background-color: rgba(255,255,255,.1);
+
+    @include clearfix();
+
+    @media screen and (min-width: 62em){
+        margin: $global-spacing-unit;
+    }
+}
+
+.pagination__prev,
+.pagination__next {
+
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: $global-spacing-unit-small;
+    width: 50%;
+
+    @include font-size(16px, 16px);   
+    @include transition(background-color .25s ease);
+
+    @media screen and (min-width: 458.5em){
+        @include font-size(20px, $global-spacing-unit-large);  
+        padding: 0 $global-spacing-unit;
+    }
+
+    @include hocus {
+        color: white;
+        background-color: $brand-color-teal;
+    }
+}
+
+.pagination__next {
+    float: right;
+    text-align: right;
+}
