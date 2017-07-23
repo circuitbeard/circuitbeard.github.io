@@ -130,12 +130,12 @@ body {
     display: block;
     padding-top: $global-spacing-unit;
 
-    object, img {
+    object, img, svg {
         width: 100px;
         height: 206px;
     }
 
-    object {
+    object, svg {
         opacity: .5;
         pointer-events: none;
     }
