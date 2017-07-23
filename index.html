@@ -19,10 +19,10 @@ layout: default
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-	{% if paginator.page > 1 %}
+	{% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="pagination__prev">Older<span class="hidden-on-mobile"> posts</span></a>
     {% endif %}
-    {% if paginator.page < paginator.total_pages %}
+    {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="pagination__next">Newer<span class="hidden-on-mobile"> posts</span></a>
     {% endif %}
 </div>
