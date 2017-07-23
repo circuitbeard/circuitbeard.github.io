@@ -13,6 +13,6 @@ Having recently been working on a IoT workshop based around the [Spark Core from
 
 Here then is my cheat sheet for the Spark Core. I hope it comes in handy for people (and do let me know if you see any errors in it).
 
-<div class="wide-content" markdown="1">
+<div class="image" markdown="1">
 [![Spark Core Cheat Sheet](/media/spark/spark_cheat_sheet.jpg)](/media/spark/spark-core-cheat-sheet-v1-1.pdf)
 </div>

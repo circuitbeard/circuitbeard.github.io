@@ -112,11 +112,11 @@
     }
 }
 
-.wide-content {
+.image {
     @extend .wide-content-core;
 
-    & > a > img {
-        max-width: 100%;
+    img {
+        width: 100%;
     }
 }
 
