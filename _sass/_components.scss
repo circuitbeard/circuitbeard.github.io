@@ -129,8 +129,8 @@ pre[class*="language-"] {
     width: auto;
 
     @media screen and (min-width: 48.5em){
-        margin-left: $global-spacing-unit*-1;
-        margin-right: -((150px + 5px) - $global-spacing-unit);
+        margin-left: -10px;
+        margin-right: -((150px + 10px) - $global-spacing-unit);
         margin-bottom: $global-spacing-unit;  
     }
 }
