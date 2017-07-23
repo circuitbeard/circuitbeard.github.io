@@ -19,7 +19,8 @@
             rowHeight: 90, 
             maxRowHeight: 200,
             lastRow: 'justify',
-            margins: 0
+            margins: 0,
+            captions: false
         });
 
     };
@@ -30,7 +31,8 @@
             rowHeight: 230, 
             maxRowHeight: 400,
             lastRow: 'justify',
-            margins: 0
+            margins: 0,
+            captions: false
         });
 
     }
