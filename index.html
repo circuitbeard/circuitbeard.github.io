@@ -4,14 +4,14 @@ layout: default
 
 {% for post in site.posts %}
 	<article class="post">
-		{% if page.masthead %}
-	    <img class="post__img" src="{{ page.masthead }}}" alt="" />
+		{% if post.masthead %}
+	    <img class="post__img" src="{{ post.masthead }}}" alt="" />
 	    {% endif %}
 	    <div class="post__content">
-	        <div class="post__date">{{ page.date | date: "%B %e, %Y" }}</div>
+	        <div class="post__date">{{ post.date | date: "%B %e, %Y" }}</div>
 	        <h2 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	        <div class="post__body trim">
-	            {{ content }}
+	            {{ post.content }}
 	        </div>
 	    </div>
 	</article>
