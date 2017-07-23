@@ -120,9 +120,18 @@ pre[class*="language-"] {
 }
 
 .gallery {
-    @extend .wide-content;
+    //@extend .wide-content;
+
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: $global-spacing-unit-small;  
       
     width: auto;
+
+    @media screen and (min-width: 48.5em){
+        margin-right: -(150px - 5px - $global-spacing-unit);
+        margin-bottom: $global-spacing-unit;  
+    }
 }
 
 .video {
