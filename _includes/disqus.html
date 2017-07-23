@@ -7,7 +7,7 @@
 
 	    {% if page.disqus_id %}
 	    var disqus_identifier = '{{ page.disqus_id }}';
-		{% endif %}
+		{% else %}
 	    var disqus_identifier = '{{ page.id }}';
 		{% endif %}
 
