@@ -35,7 +35,13 @@ After a few nights work, I had a design I was happy with, and had broken it all 
 
 With the design ready, I decided to go through a prototyping phase. I had a ton of laser ply in the garage, so this was perfect for experimenting with. I cut out all the panels, and dry fit everything together using masking tape to keep things together.
 
-[IMAGES]
+<div class="gallery" markdown="1">
+[![Laser Cuting 1](/media/rombusct/04.jpg)](/media/rombusct/04.jpg)
+[![Laser Cuting 2](/media/rombusct/05.jpg)](/media/rombusct/05.jpg)
+[![Laser Cuting 3](/media/rombusct/06.jpg)](/media/rombusct/06.jpg)
+[![Test Fit 1](/media/rombusct/07.jpg)](/media/rombusct/07.jpg)
+[![Test Fit 2](/media/rombusct/08.jpg)](/media/rombusct/08.jpg)
+</div> 
 
 The prototyping phase was a really worthwhile process as it helped identify several little issues, allowing tweaks to be made to the design files before the real build began.
 
