@@ -57,6 +57,14 @@
 
 .post__heading {
     text-transform: uppercase;
+
+    a {
+        color: $brand-text-color;
+
+        @include hocus {
+            color: $brand-color-teal;
+        }
+    }
 }
 
 .share {
