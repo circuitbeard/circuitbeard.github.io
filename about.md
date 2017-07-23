@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-show-in-nav: true
+show_in_nav: true
 ---
 
 Some information about you!
