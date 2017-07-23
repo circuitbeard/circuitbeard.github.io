@@ -6,12 +6,8 @@ masthead: /media/mh_contact.jpg
 show_in_nav: true
 ---
 
-Some information about you!
+Please use the comments section for project specific questions, as other readers may have the same question.
 
-### More Information
+If you have something else you’d like to ask, I’m most active on [Twitter](https://twitter.com/circuitbeard).
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Not a fan of social media, or you have a really big question? Then feel free to drop me an email to [hi@circuitbeard.co.uk](mailto:hi@circuitbeard.co.uk)
