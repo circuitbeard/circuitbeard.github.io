@@ -86,9 +86,9 @@ With the case built, the next step was to wire it up. Thankfully the guys at Pim
 Given how easy it was to use the [Picade PCB](https://shop.pimoroni.com/products/picade-controller-board) in my ROMBUS3000 project, it was a no brainer I would used this again, however given that I now have 2 controllers this meant 2 would be needed (this requires a bit of fiddling code wise, but I’ll get onto that a little later). I also decided to upgrade the [Raspberry Pi to a v3](https://shop.pimoroni.com/products/raspberry-pi-3) with in built wifi and better processing speed. The only other piece I needed to fit inside was a little custom board I made with just some male PCB headers on to be used as a power distribution board so I could grab 5v/Gnd for various components, such as the monitor and some 5v LED’s in some of the buttons.
 
 <div class="gallery" markdown="1">
-[![Wiring 1](/media/rombusct/21.jpg)](/media/rombusct/21.jpg)
-[![Wiring 2](/media/rombusct/22.jpg)](/media/rombusct/22.jpg)
-[![Wiring 3](/media/rombusct/23.jpg)](/media/rombusct/23.jpg)
+[![Wiring 1](/media/rombusct/22.jpg)](/media/rombusct/22.jpg)
+[![Wiring 2](/media/rombusct/23.jpg)](/media/rombusct/23.jpg)
+[![Wiring 3](/media/rombusct/24.jpg)](/media/rombusct/24.jpg)
 </div> 
 
 After a bit of jiggery pokery, I found a nice layout for everything and proceeded to drill some holes in the base so that I could screw all the components down. To save space I decided to stack the 2 Picade PCB’s together.
@@ -141,12 +141,12 @@ With the controllers configured, the only thing left is to load up some ROM’s.
 And with that, the arcade is complete
 
 <div class="gallery margin-bottom-none" markdown="1">
-[![Complete 1](/media/rombusct/24.jpg)](/media/rombusct/24.jpg)
-[![Complete 2](/media/rombusct/25.jpg)](/media/rombusct/25.jpg)
-[![Complete 3](/media/rombusct/26.jpg)](/media/rombusct/26.jpg)
-[![Complete 4](/media/rombusct/27.jpg)](/media/rombusct/27.jpg)
-[![Complete 5](/media/rombusct/28.jpg)](/media/rombusct/28.jpg)
-[![Complete 6](/media/rombusct/29.jpg)](/media/rombusct/29.jpg)
+[![Complete 1](/media/rombusct/25.jpg)](/media/rombusct/25.jpg)
+[![Complete 2](/media/rombusct/26.jpg)](/media/rombusct/26.jpg)
+[![Complete 3](/media/rombusct/27.jpg)](/media/rombusct/27.jpg)
+[![Complete 4](/media/rombusct/28.jpg)](/media/rombusct/28.jpg)
+[![Complete 5](/media/rombusct/29.jpg)](/media/rombusct/29.jpg)
+[![Complete 6](/media/rombusct/30.jpg)](/media/rombusct/30.jpg)
 </div> 
 
 <div class="video">
