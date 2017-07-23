@@ -1,5 +1,7 @@
+<p>{{ layout.layout }}</p>
+
 <ul>
-	{% if layout == 'default.html' || layout == 'post.html' %}
+	{% if layout.layout == 'default.html' || layout.layout == 'post.html' %}
 	  <li class="active"><a href="{{ site.baseurl }}/" class="active">Blog</a></li>
 	{% else %}
 	  <li><a href="{{ site.baseurl }}/">Blog</a></li>
