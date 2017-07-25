@@ -43,13 +43,12 @@ After a few nights work, I had a design I was happy with, and had broken it all 
 
 With the design ready, I decided to go through a prototyping phase. I had a ton of laser ply in the garage, so this was perfect for experimenting with. I cut out all the panels, and dry fit everything together using masking tape to keep things together.
 
-<div class="gallery" markdown="1">
 [![Laser Cuting 1](/media/rombusct/04.jpg)](/media/rombusct/04.jpg)
 [![Laser Cuting 2](/media/rombusct/05.jpg)](/media/rombusct/05.jpg)
 [![Laser Cuting 3](/media/rombusct/06.jpg)](/media/rombusct/06.jpg)
 [![Test Fit 1](/media/rombusct/07.jpg)](/media/rombusct/07.jpg)
 [![Test Fit 2](/media/rombusct/08.jpg)](/media/rombusct/08.jpg)
-</div> 
+{:.gallery} 
 
 The prototyping phase was a really worthwhile process as it helped identify several little issues, allowing tweaks to be made to the design files before the real build began.
 
@@ -59,33 +58,30 @@ With the design files ready for final production, the build began.
 
 MDF was purchased from my local B&Q and cut down to A3 size, then the various panels were cut out and painted using a black satin wood paint to cover all visible faces and edges. A roller was used to give a much smoother finish.
 
-<div class="gallery" markdown="1">
 [![Painting 1](/media/rombusct/09.jpg)](/media/rombusct/09.jpg)
 [![Painting 2](/media/rombusct/10.jpg)](/media/rombusct/10.jpg)
 [![Painting 3](/media/rombusct/11.jpg)](/media/rombusct/11.jpg)
 [![Painting 4](/media/rombusct/12.jpg)](/media/rombusct/12.jpg)
 [![Painting 5](/media/rombusct/13.jpg)](/media/rombusct/13.jpg)
-</div> 
+{:.gallery}
 
 Whilst the wood was coming out nice, reviewing the original video that inspired me, I really loved the wood effect finish they had, so at this point I started to look into wood effect vinyls, and came across some great options by d-c-fix (the guys at [Pimoroni](http://pimoroni.com/){:external} were suitably impressed too as they are now looking to stock this). I purchased a couple of metres of a few I liked the look of and proceeded to cut out a few sample panels on my plot cutter. The end result was nothing short of awesome, so I went ahead and cutout panels for all the external faces in a mix of light oak and black wood effect.
 
-<div class="gallery" markdown="1">
 [![Vinyl Decals 1](/media/rombusct/14.jpg)](/media/rombusct/14.jpg)
 [![Vinyl Decals 2](/media/rombusct/15.jpg)](/media/rombusct/15.jpg)
 [![Vinyl Decals 3](/media/rombusct/16.jpg)](/media/rombusct/16.jpg)
 [![Vinyl Decals 4](/media/rombusct/17.jpg)](/media/rombusct/17.jpg)
-</div> 
+{:.gallery}
 
 With all the panels ready, assembly began. [M4 high tensile bolts](http://www.ebay.co.uk/sch/i.html?_odkw=19mm+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.XM4+high+tensile+bolts.TRS0&_nkw=M4+high+tensile+bolts&_sacat=0){:external} were used (any bolts should  work fine, but I liked the look of the black, high tensile ones) along with some [19mmx19mm metal brackets](http://www.ebay.co.uk/sch/i.html?_odkw=19x19+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X19mm+angle+brackets.TRS0&_nkw=19mm+angle+brackets&_sacat=0){:external} purchased from ebay to hold it all together. Care had to be taken not to tighten too much and ripple the vinyl, but it was usually a case of tighten them till it ripples and then do a quarter turn back.
 
 The lid was attached via a couple of [dolls house hinges](http://www.ebay.co.uk/sch/i.html?_odkw=DIY450&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.XDIY450+hinge.TRS0&_nkw=DIY450+hinge&_sacat=0){:external}, and all the buttons and joysticks were put into their associated locations.
 
-<div class="gallery" markdown="1">
 [![Construction 1](/media/rombusct/18.jpg)](/media/rombusct/18.jpg)
 [![Construction 2](/media/rombusct/19.jpg)](/media/rombusct/19.jpg)
 [![Construction 3](/media/rombusct/20.jpg)](/media/rombusct/20.jpg)
 [![Construction 4](/media/rombusct/21.jpg)](/media/rombusct/21.jpg)
-</div> 
+{:.gallery}
 
 ### Wiring
 
@@ -93,11 +89,10 @@ With the case built, the next step was to wire it up. Thankfully the guys at Pim
 
 Given how easy it was to use the [Picade PCB](https://shop.pimoroni.com/products/picade-controller-board){:external} in my ROMBUS3000 project, it was a no brainer I would used this again, however given that I now have 2 controllers this meant 2 would be needed (this requires a bit of fiddling code wise, but I’ll get onto that a little later). I also decided to upgrade the [Raspberry Pi to a v3](https://shop.pimoroni.com/products/raspberry-pi-3){:external} with in built wifi and better processing speed. The only other piece I needed to fit inside was a little custom board I made with just some male PCB headers on to be used as a power distribution board so I could grab 5v/Gnd for various components, such as the monitor and some 5v LED’s in some of the buttons.
 
-<div class="gallery" markdown="1">
 [![Wiring 1](/media/rombusct/22.jpg)](/media/rombusct/22.jpg)
 [![Wiring 2](/media/rombusct/23.jpg)](/media/rombusct/23.jpg)
 [![Wiring 3](/media/rombusct/24.jpg)](/media/rombusct/24.jpg)
-</div> 
+{:.gallery}
 
 After a bit of jiggery pokery, I found a nice layout for everything and proceeded to drill some holes in the base so that I could screw all the components down. To save space I decided to stack the 2 Picade PCB’s together.
 
@@ -148,14 +143,13 @@ With the controllers configured, the only thing left is to load up some ROM’s.
 
 And with that, the arcade is complete
 
-<div class="gallery margin-bottom-none" markdown="1">
 [![Complete 1](/media/rombusct/25.jpg)](/media/rombusct/25.jpg)
 [![Complete 2](/media/rombusct/26.jpg)](/media/rombusct/26.jpg)
 [![Complete 3](/media/rombusct/27.jpg)](/media/rombusct/27.jpg)
 [![Complete 4](/media/rombusct/28.jpg)](/media/rombusct/28.jpg)
 [![Complete 5](/media/rombusct/29.jpg)](/media/rombusct/29.jpg)
 [![Complete 6](/media/rombusct/30.jpg)](/media/rombusct/30.jpg)
-</div> 
+{:.gallery}
 
 <div class="video">
     <iframe width="480" height="270" src="https://www.youtube.com/embed/FnfIgnMjjwE?feature=oembed" frameborder="0" allowfullscreen></iframe>
