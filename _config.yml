@@ -48,6 +48,9 @@ version: v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
+  # Disable the syntax highlighter
+  syntax_highlighter_opts:
+    disable: true
 
 # Set the Sass partials directory, as we're using @imports
 sass:
