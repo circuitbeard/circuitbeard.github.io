@@ -20,9 +20,8 @@ Well, when looking to create something to take to an event I am helping organise
 
 Looking around at case designs, there are many bar top options to choose from, but none of them really inspired me, until I came across an old video of a mini cocktail arcade.
 
-<div class="video">
-    <iframe width="480" height="270" src="https://www.youtube.com/embed/DuT_CHWoQ_M?feature=oembed" frameborder="0" allowfullscreen></iframe>
-</div>
+<iframe width="480" height="270" src="https://www.youtube.com/embed/DuT_CHWoQ_M?feature=oembed" frameborder="0" allowfullscreen></iframe>
+{:.video}
 
 When I had been looking to make an arcade machine many years ago, it was a cocktail arcade I was looking to make. I actually made a ton of progress including buying all the components, designing the case and cutting much of the wood, but I never actually put it all together, so this seemed like the perfect way to fulfill that dream, and thus ROMBUS-CT was born.
 
@@ -119,8 +118,11 @@ Before you can use the new firmware though, you’ll need to flash it to the boa
 
 Start by cloning the firmware repo:
 
-<pre class="line-numbers language-bash" data-line><code>git clone https://github.com/pimoroni/Picade-Sketch.git
-cd Picade-Sketch/update</code></pre>
+````
+git clone https://github.com/pimoroni/Picade-Sketch.git
+cd Picade-Sketch/update
+````
+{:.line-numbers .language-bash data-line=""}
 
 Now, with just 1 of the Picade boards attached, run the following command:
 
