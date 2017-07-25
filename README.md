@@ -17,9 +17,8 @@ The code for the circuitbeard website using Github Pages + Jekyll
 ### Image
 
 ````markdown
-<div class="image" markdown="1">
 [![Spark Core Cheat Sheet](/media/spark/spark_cheat_sheet.jpg)](/media/spark/spark-core-cheat-sheet-v1-1.pdf)
-</div>
+{:.image}
 ````
 
 ### Video
@@ -33,5 +32,7 @@ The code for the circuitbeard website using Github Pages + Jekyll
 ### Code
 
 ````markdown
-<pre class="line-numbers language-bash" data-line><code>sudo mycommand # Executes mycommand with super user permissions</code></pre>
+````bash
+sudo mycommand # Executes mycommand with super user permissions
+````
 ````

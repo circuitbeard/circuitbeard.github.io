@@ -106,14 +106,15 @@ The latest RetroPie was downloaded and burnt to the SD card and the Pi was boote
 
 The first change I needed to make was to rotate the screen as it needs to be oriented in portrait mode (the top is actually designed so you can have it in either portrait or landscape mode, but I wanted to go with the classic cocktail arcade portrait mode). To do this I connected to the pi and updated the boot config file by running the command:
 
-<pre class="line-numbers language-bash" data-line><code>sudo nano /boot/config.txt</code></pre>
+````bash
+sudo nano /boot/config.txt
+````
 
 And then added/updated the display_rotate option as follows:
 
 ````bash
 display_rotate=3
 ````
-{:.line-numbers}
 
 With that saved and the system rebooted, the display was now running in portrait mode.
 The next thing to configure was the Picade boards. By default, these come with a firmware that makes them act as a keyboard, which normally works fine, but when you are connecting 2 at the same time, RetroePie doesn’t differentiate them so there is no way to separate player 1 from player 2. Luckily, Phil at Pimoroni has been working on a [new firmware](http://forums.pimoroni.com/t/new-2-x-configurable-keyboard-gamepad-firmware/1881){:external} that allows the boards to work as game controllers, which CAN be seen as separate controllers.
@@ -124,22 +125,26 @@ Start by cloning the firmware repo:
 
 ````bash
 git clone https://github.com/pimoroni/Picade-Sketch.git
-cd Picade-Sketch/update````
-{:.line-numbers}
+cd Picade-Sketch/update
+````
 
 Now, with just 1 of the Picade boards attached, run the following command:
 
-<pre class="line-numbers language-bash" data-line><code>./update picade_2016.hex</code></pre>
+````bash
+./update picade_2016.hex
+````
 
 Disconnect the Picade board, and do the same for the second board.
 
 With the firmware flashed, we can now configure them as game controllers. To do this, you’ll need to connect to them over serial. I did this by connecting the board to my PC, and used Putty in serial mode, however you should be able to do this using Arduino’s serial monitor if you like. Just make sure you connect to the right COM port, and at baud rate 9600.
 With a connection made, configuring it as a game controller is as simple as typing the letter ‘g’. This will apply a default game controller config, however this will also replace the volume and esc/enter keys with alternative keys, but we want to keep these as they were with the keyboard setup. Luckily you can map these back by running the following commands:
 
-<pre class="line-numbers language-bash" data-line><code>b 12 176
+````bash
+b 12 176
 b 13 177
 b 14 250
-b 15 251</code></pre>
+b 15 251
+````
 
 With the controller configured, type ‘s’ to save the configuration to the Picade boards EPROM, and then repeat for the second one.
 
