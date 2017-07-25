@@ -149,7 +149,7 @@ And with that, the arcade is complete
 [![Complete 4](/media/rombusct/28.jpg)](/media/rombusct/28.jpg)
 [![Complete 5](/media/rombusct/29.jpg)](/media/rombusct/29.jpg)
 [![Complete 6](/media/rombusct/30.jpg)](/media/rombusct/30.jpg)
-{:.gallery}
+{:.gallery .margin-bottom-none}
 
 <div class="video">
     <iframe width="480" height="270" src="https://www.youtube.com/embed/FnfIgnMjjwE?feature=oembed" frameborder="0" allowfullscreen></iframe>
