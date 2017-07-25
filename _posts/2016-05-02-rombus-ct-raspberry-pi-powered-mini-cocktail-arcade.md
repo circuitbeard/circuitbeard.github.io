@@ -118,11 +118,11 @@ Before you can use the new firmware though, you’ll need to flash it to the boa
 
 Start by cloning the firmware repo:
 
-````
+~~~
 git clone https://github.com/pimoroni/Picade-Sketch.git
 cd Picade-Sketch/update
-````
-{:.line-numbers .language-bash data-line=""}
+~~~
+{:.language-bash}
 
 Now, with just 1 of the Picade boards attached, run the following command:
 
