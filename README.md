@@ -7,12 +7,11 @@ The code for the circuitbeard website using Github Pages + Jekyll
 ### Gallery
 
 ````markdown
-<div class="gallery" markdown="1">
 [![Case 1](/media/pizerohubcase/01.jpg)](/media/pizerohubcase/01.jpg)
 [![Case 2](/media/pizerohubcase/02.jpg)](/media/pizerohubcase/02.jpg)
 [![Case 3](/media/pizerohubcase/03.jpg)](/media/pizerohubcase/03.jpg)
 [![Case 4](/media/pizerohubcase/04.jpg)](/media/pizerohubcase/04.jpg)
-</div>
+{:.gallery}
 ````
 
 ### Image
