@@ -113,6 +113,7 @@ And then added/updated the display_rotate option as follows:
 ````bash
 display_rotate=3
 ````
+{:.line-numbers}
 
 With that saved and the system rebooted, the display was now running in portrait mode.
 The next thing to configure was the Picade boards. By default, these come with a firmware that makes them act as a keyboard, which normally works fine, but when you are connecting 2 at the same time, RetroePie doesn’t differentiate them so there is no way to separate player 1 from player 2. Luckily, Phil at Pimoroni has been working on a [new firmware](http://forums.pimoroni.com/t/new-2-x-configurable-keyboard-gamepad-firmware/1881){:external} that allows the boards to work as game controllers, which CAN be seen as separate controllers.
@@ -121,10 +122,9 @@ Before you can use the new firmware though, you’ll need to flash it to the boa
 
 Start by cloning the firmware repo:
 
-~~~ bash
+````bash
 git clone https://github.com/pimoroni/Picade-Sketch.git
-cd Picade-Sketch/update
-~~~
+cd Picade-Sketch/update````
 {:.line-numbers}
 
 Now, with just 1 of the Picade boards attached, run the following command:
