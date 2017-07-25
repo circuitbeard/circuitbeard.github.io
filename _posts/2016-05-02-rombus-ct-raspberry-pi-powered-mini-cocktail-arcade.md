@@ -68,7 +68,7 @@ MDF was purchased from my local B&Q and cut down to A3 size, then the various pa
 [![Painting 5](/media/rombusct/13.jpg)](/media/rombusct/13.jpg)
 </div> 
 
-Whilst the wood was coming out nice, reviewing the original video that inspired me, I really loved the wood effect finish they had, so at this point I started to look into wood effect vinyls, and came across some great options by d-c-fix (the guys at [Pimoroni](http://pimoroni.com/) were suitably impressed too as they are now looking to stock this). I purchased a couple of metres of a few I liked the look of and proceeded to cut out a few sample panels on my plot cutter. The end result was nothing short of awesome, so I went ahead and cutout panels for all the external faces in a mix of light oak and black wood effect.
+Whilst the wood was coming out nice, reviewing the original video that inspired me, I really loved the wood effect finish they had, so at this point I started to look into wood effect vinyls, and came across some great options by d-c-fix (the guys at [Pimoroni](http://pimoroni.com/){:external} were suitably impressed too as they are now looking to stock this). I purchased a couple of metres of a few I liked the look of and proceeded to cut out a few sample panels on my plot cutter. The end result was nothing short of awesome, so I went ahead and cutout panels for all the external faces in a mix of light oak and black wood effect.
 
 <div class="gallery" markdown="1">
 [![Vinyl Decals 1](/media/rombusct/14.jpg)](/media/rombusct/14.jpg)
@@ -77,9 +77,9 @@ Whilst the wood was coming out nice, reviewing the original video that inspired 
 [![Vinyl Decals 4](/media/rombusct/17.jpg)](/media/rombusct/17.jpg)
 </div> 
 
-With all the panels ready, assembly began. [M4 high tensile bolts](http://www.ebay.co.uk/sch/i.html?_odkw=19mm+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.XM4+high+tensile+bolts.TRS0&_nkw=M4+high+tensile+bolts&_sacat=0) were used (any bolts should  work fine, but I liked the look of the black, high tensile ones) along with some [19mmx19mm metal brackets](http://www.ebay.co.uk/sch/i.html?_odkw=19x19+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X19mm+angle+brackets.TRS0&_nkw=19mm+angle+brackets&_sacat=0) purchased from ebay to hold it all together. Care had to be taken not to tighten too much and ripple the vinyl, but it was usually a case of tighten them till it ripples and then do a quarter turn back.
+With all the panels ready, assembly began. [M4 high tensile bolts](http://www.ebay.co.uk/sch/i.html?_odkw=19mm+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR12.TRC2.A0.H0.XM4+high+tensile+bolts.TRS0&_nkw=M4+high+tensile+bolts&_sacat=0){:external} were used (any bolts should  work fine, but I liked the look of the black, high tensile ones) along with some [19mmx19mm metal brackets](http://www.ebay.co.uk/sch/i.html?_odkw=19x19+angle+brackets&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.X19mm+angle+brackets.TRS0&_nkw=19mm+angle+brackets&_sacat=0){:external} purchased from ebay to hold it all together. Care had to be taken not to tighten too much and ripple the vinyl, but it was usually a case of tighten them till it ripples and then do a quarter turn back.
 
-The lid was attached via a couple of [dolls house hinges](http://www.ebay.co.uk/sch/i.html?_odkw=DIY450&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.XDIY450+hinge.TRS0&_nkw=DIY450+hinge&_sacat=0), and all the buttons and joysticks were put into their associated locations.
+The lid was attached via a couple of [dolls house hinges](http://www.ebay.co.uk/sch/i.html?_odkw=DIY450&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR0.TRC0.H0.XDIY450+hinge.TRS0&_nkw=DIY450+hinge&_sacat=0){:external}, and all the buttons and joysticks were put into their associated locations.
 
 <div class="gallery" markdown="1">
 [![Construction 1](/media/rombusct/18.jpg)](/media/rombusct/18.jpg)
@@ -90,9 +90,9 @@ The lid was attached via a couple of [dolls house hinges](http://www.ebay.co.uk/
 
 ### Wiring
 
-With the case built, the next step was to wire it up. Thankfully the guys at Pimoroni were kind enough to donate a couple of wiring looms from their [Picade arcades](https://shop.pimoroni.com/products/picade) (you can make your own really easily, they are just a bit time consuming so this saved me a bunch of time). I started by wiring all the buttons and joysticks, and then moved on to planning the internals and testing where components should sit.
+With the case built, the next step was to wire it up. Thankfully the guys at Pimoroni were kind enough to donate a couple of wiring looms from their [Picade arcades](https://shop.pimoroni.com/products/picade){:external} (you can make your own really easily, they are just a bit time consuming so this saved me a bunch of time). I started by wiring all the buttons and joysticks, and then moved on to planning the internals and testing where components should sit.
 
-Given how easy it was to use the [Picade PCB](https://shop.pimoroni.com/products/picade-controller-board) in my ROMBUS3000 project, it was a no brainer I would used this again, however given that I now have 2 controllers this meant 2 would be needed (this requires a bit of fiddling code wise, but I’ll get onto that a little later). I also decided to upgrade the [Raspberry Pi to a v3](https://shop.pimoroni.com/products/raspberry-pi-3) with in built wifi and better processing speed. The only other piece I needed to fit inside was a little custom board I made with just some male PCB headers on to be used as a power distribution board so I could grab 5v/Gnd for various components, such as the monitor and some 5v LED’s in some of the buttons.
+Given how easy it was to use the [Picade PCB](https://shop.pimoroni.com/products/picade-controller-board){:external} in my ROMBUS3000 project, it was a no brainer I would used this again, however given that I now have 2 controllers this meant 2 would be needed (this requires a bit of fiddling code wise, but I’ll get onto that a little later). I also decided to upgrade the [Raspberry Pi to a v3](https://shop.pimoroni.com/products/raspberry-pi-3){:external} with in built wifi and better processing speed. The only other piece I needed to fit inside was a little custom board I made with just some male PCB headers on to be used as a power distribution board so I could grab 5v/Gnd for various components, such as the monitor and some 5v LED’s in some of the buttons.
 
 <div class="gallery" markdown="1">
 [![Wiring 1](/media/rombusct/22.jpg)](/media/rombusct/22.jpg)
@@ -119,7 +119,7 @@ And then added/updated the display_rotate option as follows:
 <pre class="line-numbers language-bash" data-line><code>display_rotate=3</code></pre>
 
 With that saved and the system rebooted, the display was now running in portrait mode.
-The next thing to configure was the Picade boards. By default, these come with a firmware that makes them act as a keyboard, which normally works fine, but when you are connecting 2 at the same time, RetroePie doesn’t differentiate them so there is no way to separate player 1 from player 2. Luckily, Phil at Pimoroni has been working on a [new firmware](http://forums.pimoroni.com/t/new-2-x-configurable-keyboard-gamepad-firmware/1881) that allows the boards to work as game controllers, which CAN be seen as separate controllers.
+The next thing to configure was the Picade boards. By default, these come with a firmware that makes them act as a keyboard, which normally works fine, but when you are connecting 2 at the same time, RetroePie doesn’t differentiate them so there is no way to separate player 1 from player 2. Luckily, Phil at Pimoroni has been working on a [new firmware](http://forums.pimoroni.com/t/new-2-x-configurable-keyboard-gamepad-firmware/1881){:external} that allows the boards to work as game controllers, which CAN be seen as separate controllers.
 
 Before you can use the new firmware though, you’ll need to flash it to the boards. The easiest way to do this is from the pi itself.
 
@@ -168,7 +168,7 @@ All in all I think the cabinet came out awesome (I actually think it’s the bes
 
 Overall, it feels great to finally realize the project of building a cocktail arcade that I started so many years ago, and I can’t wait to see how well it goes down at the event.
 
-PS. Be sure to checkout [my youtube channel](https://www.youtube.com/channel/UCuc9r0Eg5Csy0iDnZO_t2qg) for some additional videos of the [ROMBUS-CT in action](https://www.youtube.com/watch?v=FnfIgnMjjwE&list=PL_-cBfx8NkZoceXRs-R2WI-seuk_IyVq-).
+PS. Be sure to checkout [my youtube channel](https://www.youtube.com/channel/UCuc9r0Eg5Csy0iDnZO_t2qg){:external} for some additional videos of the [ROMBUS-CT in action](https://www.youtube.com/watch?v=FnfIgnMjjwE&list=PL_-cBfx8NkZoceXRs-R2WI-seuk_IyVq-){:external}.
 
 #### UPDATE 2016-05-05
 
