@@ -109,7 +109,9 @@ The first change I needed to make was to rotate the screen as it needs to be ori
 
 And then added/updated the display_rotate option as follows:
 
-<pre class="line-numbers language-bash" data-line><code>display_rotate=3</code></pre>
+````bash
+display_rotate=3
+````
 
 With that saved and the system rebooted, the display was now running in portrait mode.
 The next thing to configure was the Picade boards. By default, these come with a firmware that makes them act as a keyboard, which normally works fine, but when you are connecting 2 at the same time, RetroePie doesn’t differentiate them so there is no way to separate player 1 from player 2. Luckily, Phil at Pimoroni has been working on a [new firmware](http://forums.pimoroni.com/t/new-2-x-configurable-keyboard-gamepad-firmware/1881){:external} that allows the boards to work as game controllers, which CAN be seen as separate controllers.
