@@ -12,9 +12,11 @@ redirect_from:
  - /rombusct
 ---
 
+{:external: rel="nofollow" target="_blank"}
+
 If you follow my blog, you may recall my [ROMBUS3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine) project from a few months ago, which went down quite the storm. This was my attempt at fulfilling a long lived desire to create an arcade machine.
 
-Well, when looking to create something to take to an event I am helping organise, [CodeCabin](http://codecab.in), an arcade machine seemed the perfect fit. I could of course just take the ROMBUS3000, however I thought it would be much more fun to create a 2 player arcade so that multiple people can play together.
+Well, when looking to create something to take to an event I am helping organise, [CodeCabin](http://codecab.in){:external}, an arcade machine seemed the perfect fit. I could of course just take the ROMBUS3000, however I thought it would be much more fun to create a 2 player arcade so that multiple people can play together.
 
 Looking around at case designs, there are many bar top options to choose from, but none of them really inspired me, until I came across an old video of a mini cocktail arcade.
 
