@@ -12,7 +12,15 @@ tags:
 
 If you’ve read [RombusCT](/2016/05/02/rombus-ct-raspberry-pi-powered-mini-cocktail-arcade/), [Rombus3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine/) blog posts or [follow me on twitter](twitter.com/mattbrailsford), you’ll probably know I love nothing more than hacking some retro tech, preferably from the 80s, and upgrading it with today's technology to make something that might have existed if only the original designers/engineers had access to the same tech we do. Well, I’ve only gone and done it again, and this times it’s with the Tomy Turnin' Turbo Dashboard, an old 80s desktop motorized driving game which I’ve converted into a suitably retro Outrun arcade. 
 
-[VIDEO]
+[![Outrun 1](/media/outrun/01.jpg)](/media/outrun/01.jpg)
+[![Outrun 2](/media/outrun/02.jpg)](/media/outrun/02.jpg)
+[![Outrun 3](/media/outrun/03.jpg)](/media/outrun/03.jpg)
+[![Outrun 4](/media/outrun/04.jpg)](/media/outrun/04.jpg)
+{:.gallery .margin-bottom-none}
+
+<div class="video">
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/FnfIgnMjjwE?feature=oembed" frameborder="0" allowfullscreen></iframe>
+</div>
 
 The project itself was quite a big one for me, filled with several moments of frustration, from burnt out potentiometers, to soldering LEDs backwards, multiple TFT screen purchases and more than one change in direction as approaches to problems were found to be inadequate. 
 
@@ -21,6 +29,8 @@ What’s documented in this post then are the final approaches I took (or at lea
 ## Inputs
 When hacking hardware, I usually follow a pretty simple rule, “keep it as stock looking as possible”, so the first constraint I set myself was I must use only the existing inputs, so I’d have to use the shifter, steering wheel, ignition and push button that came with the toy. Sounds simple, but these became a real challenge.
 
+[GENERAL BEFORE SHOTS]
+
 ### Gear Shifter
 The first input I tackled was the gear shifter. Looking at the normal outrun arcades, these tend to have a 2 position shifter for high and low gear. Given the lack of an accelerator in the toy though, I decided to go with a 3 position setup, low, neutral and high for which I’ll later handle acceleration in code such that being in low or high gear will automatically apply the accelerator and being in neutral will apply the brakes.
 
@@ -28,38 +38,60 @@ Given this approach, I decided I’d use two switches to detect low / high gear 
 
 For the switches, I examined the areas around the shifters internals to see where I could mount them, and found I could fit some just to one side of the shifter. I also noticed that the shifter stick itself had a nice cutout which would be perfect to insert a 3D printed actuator, so this is exactly what I did. A bit of hot glue and JB weld later and the switches and actuator were mounted.
 
+[SHIFTER SWITCHES / ACTUATOR]
+
 For the self centering mechanism, I kept a gear with a rod attachment from the original internals which sweeps side to side as the gear shifter is moved, and rigged up some rubber bands around some nearby internal structures to force it to stay centred, which in turn forces the shifter to stay centred. A bit Heath Robinson, but nobody is going to see it, so hey :)
+
+[SELF CENTERING MECHANISM]
 
 ### Steering
 The next tricky one to solve was the steering. Again reviewing the original mechanism, the end of the steering wheel already had an actuator that converts the rotary motion of the wheel into a linear, side to side motion. The first thought that came to mind then was to use a [slide potentiometer](https://www.digikey.co.uk/product-detail/en/bourns-inc/PTA2043-2015DPB103/PTA2043-2015DPB103-ND/3781179){:external} with a custom head to match the original connector. Well, a custom PCB, a Digikey order of a few different sized slide pots, and some 3D printed tinkering and the approach worked :) 
+
+[STEERING WHEEL SHOTS]
 
 The PCB isn’t anything fancy, it just mounts to a plate that was already in the toy, and exposes the three pins of the potentiometer that get hooked up to the controller board later on.
 
 ### Ignition (Power)
 For the ignition, I really wanted this to be the power switch, so turning the ignition on turns on the Pi, and turning it off powers everything down. Any good Raspberry Pi developer knows you can’t just turn a Raspberry Pi off, but thankfully I’d recently purchased a few [PowerBlock PCB’s](https://blog.petrockblock.com/powerblock/){:external} which handled the powering up / down for you, so I simply used one of these and connected the wires that already came from the ignition key.
 
+[IGNITION KEY]
+
 A couple of mods I did make to the PowerBlock though were to replace the upright pins with some right angled ones as I knew I was going to be stacking other components above it, so wanted to save some vertical space, and I also knew I was going to need access to the I2C pins which the PowerBlock connects to, as well as access to the 5/3v pins, so I modified a [Pimoroni Pico HAT Hacker](https://shop.pimoroni.com/collections/prototyping/products/pico-hat-hacker){:external} (making sure not to break any traces I’d need) and soldered it to the head of the pin tops on the PowerBlock PCB.
+
+[POWERBLOCK]
 
 Another nice feature of the PowerBlock is the ability to attach an indicator LED, so for this I (carefully) drilled a hole in the chassis next to the ignition key and mounted a 3mm LED with hot glue.
 
+[LED]
+
 Lastly, I needed to decide on an actual power source. I did consider battery power, but this was going to take up too much space, so I just went with an approach I’ve done in my other projects which is to use a panel mount barrel jack. This is really the only non original modification, however using panel mount components makes for a really clean solution, so I was happy to go with it. For the power source I use a 5V DC 2A power supply, so it should suffice for all my power needs and saves the need of any converters.
+
+[POWER JACK]
 
 ### Start Button
 The only really “push button” element from the original toy was a reset button for a counter, but again, this was all rather mechanical. From an arcade point of view, the only thing we’ll need a button for is to start the game (we’ll configure the game later to be freeplay so we don’t need a coin button) so this seemed a perfect candidate.
 
 For this, I had some [large tactile switches](http://uk.farnell.com/wurth-elektronik/430456073736/switch-360gf-12x12mm-7-3mm-act/dp/2065139?MER=sy-me-pd-mi-acce){:external} lying around already from another project so mounted one of these on some scrap prototyping board, cut it to size and mounted it roughly inline with the original hole. I 3D printed a block to act as a mounting wall, but really it was just a case of using something to keep it straight and provide something to glue against.
 
+[BUTTON + CAP]
+
 For the button, I used my dremel to cut it down to size and then JB welded it to a [button cap](http://uk.farnell.com/wurth-elektronik/714308050/cap-green-for-12x12mm-tact-switch/dp/2134450){:external} that attaches perfectly to the tactile switch. It doesn’t really have much “in/out” movement, but it does the job. Wires were attached to the board and then linked up to the controller.
 
 ### Volume Controls
 I knew I was going to be adding a speaker, but I also knew I’d probably want to be able to control the volume of this, so volume controls were going to be needed. I really didn’t want to add any extra external controls for these to ruin the aesthetic, so instead I decided to mount them inside the old battery compartment out of the way. As they wouldn’t be seen, they didn’t need to beautiful, so I just soldered some [small tactile switches](http://uk.farnell.com/omron-electronic-components/b3f4055/switch-projected-12x12x7-3-260gf/dp/1960973?MER=sy-me-pd-mi-alte){:external} to some spare perf board and hot glued them to the inside of the compartment.
 
+[VOLUME BUTTONS]
+
 ### Controller (Picade PCB)
 The final element for the inputs was some kind of controller. As I’d used one before in both the [Rombus3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine/) and the [RombusCT](/2016/05/02/rombus-ct-raspberry-pi-powered-mini-cocktail-arcade/), [Rombus3000](/2015/09/12/rombus3000-a-raspberry-pi-mini-arcade-machine/), a [Picade PCB](https://shop.pimoroni.com/products/picade-controller-board){:external} seemed the perfect candidate. Another positive for this was that it was already capable of handling analog joysticks, so with a bit of config, should just work with my steering wheel potentiometer no problem, as well has having an onboard amplifier for the speaker. 
+
+[PICADE MOUNTED SHOTS]
 
 To configure the board, I downloaded the [latest firmware update](https://github.com/pimoroni/Picade-Sketch){:external}, and from the Pi, flashed it to the PCB ([see the github repo for instructions](https://github.com/pimoroni/Picade-Sketch/tree/master/update){:external}). I kept the default keyboard configuration, but just changed the single “Up” connector to be a joystick input by issuing the serial command `b 0 249` followed by an `s` command to save this to the EPROM.
 
 The last thing to do was to wire everything up, which was pretty much standard. The only other thing I had to do was feed some 5v + GND wires to the steering wheel potentiometer. For this, I just pulled them off the ISP pins on top of the Picade board.
+
+[STEERING WIRING + OTHERS (TODO)]
 
 ## Outputs
 With the inputs sorted, it was time to start thinking of how to actually display things. I knew I was going to need a screen for the actual game play, but I also really wanted to make the dashboard display interactive as this was such a key element of the original game.
@@ -71,7 +103,11 @@ The screen I ended up going for was a [KeDei 3.5” HDMI display (also sold unde
 
 With the screen chosen, I then went about creating the mount and bezel. Starting with the bezel, I did a bunch of trial and error laser cuts out of black acrylic till I got something that fit snugly in the original space. The black acrylic ended up being a bit too shiny, so I sanded it down a bit to give it more of a matt look. 
 
+[SCREEN SHOT + BEZEL SHOTS]
+
 With the bezel mounted, then next tricky part was mounting the screen. To help with this, I 3D printed a thin surround to fit round the edge of the screen which I could glue into place without damaging the screen and then just use a few small dabs of hot glue on the back of the screen to hold it into place. It took some adjusting to get everything lined up perfectly, but it was really just patience and several attempts until it was spot on.
+
+[3D PRINT SHOTS]
 
 For the wiring, I purchased as [low profile and flexible a HDMI cable](http://www.ebay.co.uk/itm/111913220816){:external} as I could find, and for power, used a couple of jumper cables to take 5V and GND from the Pi’s GPIO header, and just hot glued those into place to make sure they wouldn’t fall out.
 
@@ -82,11 +118,17 @@ The first PCB I had manufactured used SMD components, and during that test I fou
 
 For the LED controller, I already had an [Adafruit IS31FL3731 charlieplexing LED driver board](https://www.adafruit.com/product/2946){:external} lying around, which was capable of driving more LEDs than I would need, so I went with that as the driver. 
 
+[LED DRIVER SHOTS (TODO)]
+
 With the PCB designed and sent off to [Dirty PCBs](http://dirtypcbs.com/){:external} to be manufactured, I then focused on the dashboard decal. This was done in inkscape and I just transfered as much of the original design as I could making sure to line everything up with the PCB design being manufactured.
+
+[DESIGN SHOTS]
 
 I printed the design out onto some vinyl sticker material I had purchased, cut out all the holes with a scalpel and then sandwiched it between 2 layers of clear acrylic, which also has cutouts for all the electrical components, which I’d cut out on my laser cutter.
 
 When the PCB arrived, I soldered everything up, and did some testing with the [Adafruit arduino driver](https://github.com/adafruit/Adafruit_IS31FL3731){:external}, and it all worked just how I wanted it (well, maybe not first time, but this post is already getting pretty long :)).
+
+[DASHBOARD PCB SHOTS]
 
 To mount, I used the original dashboard mounting holes and screws, but then also hot glued the edges to make sure it wasn’t going to go anywhere.
 
@@ -95,10 +137,14 @@ The final output I would need would be a speaker. Outrun has some pretty nostalg
 
 The speaker I used was one that I had pulled out of some other old toy a while back, and installation was just a case of finding a place it could mount easily. I ended up mounting it inside the old battery compartment, drilling a few holes to let the sound through.
 
+[SPEAKER SHOT (TODO)]
+
 Lastly, I wired the speaker up to the Picade PCBs speaker terminals, and that was that job done.
 
 ## Construction
 With all the inputs and outputs setup, the final hardware element to finish was the mounting of the Raspberry Pi itself, and any final wiring. There isn’t any rocket science here, I just chose the biggest clear space, and mounted everything in that spot stacked via some nylon standoffs, and being sure to leave enough room around the edge to make all the connections I would need.
+
+[CONSTRUCTION SHOTS]
 
 ## Code
 Now that all the hardware hacking was done, it was now time to move on to the code side of things.
@@ -199,6 +245,8 @@ With the game up and running, it was now time to get it talking to the dashboard
 
 For this I would use [WiringPi](http://wiringpi.com/){:external} and custom [Dashboard class](https://github.com/circuitbeard/cannonball/blob/master/src/main/dashboard/dashboard.cpp){:external} I wrote. Again, explaining all of the Dashboard code would be a bit too much for this post, but in summary I ported the Arduino code for the Adafruit IS31F3731 library to work on the Raspberry Pi by using WiringPi to do the I2C communications. Additional methods to interface with the individual dashboard elements were added, such as updateTacho, updateFuel, updateSpeed etc, and then the game code was updated to call these methods in place of the previously commented out code that would draw them to the game screen, making the dashboard update with the actual real time game values. 
 
+[VSCODE SHOTS (TODO)]
+
 **Note:** Because cannonball is written in C++ this made this all a lot easier, but if you were using some other games engine, you could potentially inspect register values to pull out the different variables.
 
 To incorporate our custom Dashboard class into the Cannonball codebase, I had to first install WiringPi (see [instructions here](http://wiringpi.com/download-and-install/){:external}, you’ll want to make sure you have it installed from src, so uninstall / reinstall if you don’t) then I had to update both the [sdl2_rpi.cmake](https://github.com/circuitbeard/cannonball/blob/master/cmake/sdl2_rpi.cmake){:external} file to include the WiringPi dependency, as well as the [CMakeList.txt](https://github.com/circuitbeard/cannonball/blob/master/cmake/CMakeLists.txt){:external} file to include the new Dashboard C++ class files.
@@ -218,6 +266,8 @@ With all the code updates made, and our solution built, we can fire up the game 
 ````
 
 Now as we play the game, the revs, speed, time remaining (fuel) and turbo mode should all update our dashboard.
+
+[VIDEO?]
 
 The last thing to do with Cannonball, was to make some configuration changes in `config.xml` file such as enabling fullscreen mode, enabling freeplay mode, setting the frame rate, disabling the menu system and enabling our analog steering wheel controller.
 
@@ -254,5 +304,9 @@ wget -O - https://raw.githubusercontent.com/petrockblog/PowerBlock/master/instal
 ## Finishing Touches
 With all the hardware and software done, the last things to do were just the finishing touches, which in this case was some custom decals. For these I designed them in inkscape again and printed them out on some printable sticker vinyl. Some careful scissor work later, and even more careful sticker placement and we were done!  
 
+[DECAL SHOTS]
+
 ## Conclusion
 If you actually read all of this post, then I salute you :) It was a pretty epic build, and a hard one to document so if I’ve skimmed over anything, be sure to leave a question in the comments. Overall though, it was a really challenging build, but I’m super happy with the result.
+
+[FINISHED SHOTS + VIDEO]
