@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tomy Turnin' Turbo Dashboard Outrun Arcade
+excerpt: Build log for my retro Outrun arcade machine build from a Tomy Turnin' Turbo Dashboard toy
 masthead: /media/mh_outrun.jpg
 tags:
  - raspberrypi
