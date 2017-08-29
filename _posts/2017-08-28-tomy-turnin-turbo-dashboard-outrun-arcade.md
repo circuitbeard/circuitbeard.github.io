@@ -22,6 +22,8 @@ If you’ve read [RombusCT](/2016/05/02/rombus-ct-raspberry-pi-powered-mini-cock
     <iframe width="480" height="270" src="https://www.youtube.com/embed/-4N2GVX-XKg?feature=oembed" frameborder="0" allowfullscreen></iframe>
 </div>
 
+Some key features are an integrated 3.5" TFT screen, fully usable steering wheel and gear shifter (dashboard turbo light comes on when in high gear), working ignition key for power, true mph speed and rev counter displays, and a fuel guage to represent the stage time remaining.
+
 The project itself was quite a big one for me, filled with several moments of frustration, from burnt out potentiometers, to soldering LEDs backwards, multiple TFT screen purchases and more than one change in direction as approaches to problems were found to be inadequate. 
 
 What’s documented in this post then are the final approaches I took (or at least the best I can recall as some times I’m sure I was just trying anything :)).
