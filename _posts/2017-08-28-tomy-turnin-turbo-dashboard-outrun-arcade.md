@@ -20,7 +20,7 @@ If you’ve read [RombusCT](/2016/05/02/rombus-ct-raspberry-pi-powered-mini-cock
 {:.gallery .margin-bottom-none}
 
 <div class="video">
-    <iframe width="480" height="270" src="https://www.youtube.com/embed/-4N2GVX-XKg?feature=oembed" frameborder="0" allowfullscreen></iframe>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/r21Zfmw7moI?feature=oembed" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Some key features are an integrated 3.5" TFT screen, fully usable steering wheel and gear shifter (dashboard turbo light comes on when in high gear), working ignition key for power, true MPH speed and rev counter displays, and a fuel gauge to represent the stage time remaining.
@@ -365,5 +365,5 @@ If you actually read all of this post, then I salute you :) It was a pretty epic
 {:.gallery .margin-bottom-none}
 
 <div class="video">
-    <iframe width="480" height="270" src="https://www.youtube.com/embed/-4N2GVX-XKg?feature=oembed" frameborder="0" allowfullscreen></iframe>
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/r21Zfmw7moI?feature=oembed" frameborder="0" allowfullscreen></iframe>
 </div>
