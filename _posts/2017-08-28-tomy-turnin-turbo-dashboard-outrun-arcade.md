@@ -371,9 +371,9 @@ If you actually read all of this post, then I salute you :) It was a pretty epic
 ## UPDATE: 2017-09-23
 Thanks to feedback from a few people on twitter, I got reminded of a major feature that was present in the original Outrun arcades but that I had missed in my build, which was of course haptic feedback. Well, I couldn't live knowing I was missing such an awesome feature, so I went ahead and added it in :)
 
-[![Haptic 1](/media/outrun/59.jpg)](/media/outrun/59.jpg)
-[![Haptic 2](/media/outrun/60.jpg)](/media/outrun/60.jpg)
-[![Haptic 3](/media/outrun/61.jpg)](/media/outrun/61.jpg)
+[![Haptic Motor 1](/media/outrun/59.jpg)](/media/outrun/59.jpg)
+[![Haptic Motor 2](/media/outrun/60.jpg)](/media/outrun/60.jpg)
+[![Haptic Motor 3](/media/outrun/61.jpg)](/media/outrun/61.jpg)
 {:.gallery}
 
 For this I'm using a [vibrating mini motor disc](https://shop.pimoroni.com/products/vibrating-mini-motor-disc){:external} which I have attached to the underside of the steering wheel and routed the wires through the steering wheel shaft to the inside of the cabinet. There I attach them to an [Adafruit DRV2605L Haptic Motor Controller](https://shop.pimoroni.com/products/adafruit-drv2605l-haptic-motor-controller){:external} which I have soldered directly on top of the IS31FL3731 boards I2C pins.
@@ -383,6 +383,8 @@ For this I'm using a [vibrating mini motor disc](https://shop.pimoroni.com/produ
 
 Cannonball already had an outputs class for haptic feedback, but I pretty much cleared that out and started fresh for my implementation. Similar to how I did the dashboard, I started by porting the [Adafruit DRV2605L Arduino Driver](https://github.com/adafruit/Adafruit_DRV2605_Library){:external} to work on the Pi (see [my cannonball repo on GitHub](https://github.com/circuitbeard/cannonball/blob/master/src/main/engine/ooutputs.cpp){:external} for the full code), then tweaked it to trigger different vibrations during the game. Currently I have it configured to vibrate when the car skids, goes off road or crashes.
 
-[video]
+<div class="video">
+    <iframe width="480" height="270" src="https://www.youtube.com/embed/_qNDbQitKBk?feature=oembed" frameborder="0" allowfullscreen></iframe>
+</div>
 
 All in all, I'm really glad I added this feature as it really does add an extra dimension and takes it to another level.
