@@ -381,7 +381,7 @@ For this I'm using a [vibrating mini motor disc](https://shop.pimoroni.com/produ
 [![Haptic Controller](/media/outrun/62.jpg)](/media/outrun/62.jpg)
 {:.gallery}
 
-Cannonball already had an outputs class for haptic feedback, but I pretty much cleared that out and started fresh for my implementation. Similar to how I did the dashboard, I started by porting the [Adafruit DRV2605L Arduino Driver](https://github.com/adafruit/Adafruit_DRV2605_Library){:external} to work on the Pi (see [my cannonball repo on GitHub](https://github.com/circuitbeard/cannonball/blob/master/src/main/engine/ooutputs.cpp){:external} for the full code), then tweaked it to trigger different vibrations during the game. Currently I have it configured to vibrate when the car skids, goes off road or crashes.
+Cannonball already had an outputs class for haptic feedback, but I pretty much cleared that out and started fresh for my implementation. Similar to how I did the dashboard, I started by porting the [Adafruit DRV2605L Arduino Driver](https://github.com/adafruit/Adafruit_DRV2605_Library){:external} to work on the Pi, then tweaked it to trigger different vibrations during the game (see [my cannonball repo on GitHub](https://github.com/circuitbeard/cannonball/blob/master/src/main/engine/ooutputs.cpp){:external} for the full code). Currently I have it configured to vibrate when the car skids, goes off road or crashes.
 
 <div class="video">
     <iframe width="480" height="270" src="https://www.youtube.com/embed/_qNDbQitKBk?feature=oembed" frameborder="0" allowfullscreen></iframe>
