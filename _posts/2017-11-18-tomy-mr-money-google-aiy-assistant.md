@@ -29,11 +29,13 @@ Even using a Pi Zero, placement of the Pi was still pretty tight, so the only re
 ### The Arm
 If you are familiar with the original Mr Money, you'll know his arm was spring mounted to feed money into the moneybank. Well, this seemed a prime candidate to convert into the button to trigger the AIY into action.
 
+Looking inside, there was already an attachement to the arm socket with a little nub which triggered a switch from before (though it wasn't perminantly attached so I JB Welded it) which luckily was at just about the same height as the top plate, so re-cutting a new top plate with a "wing" created a perfect mounting position for a micro switch. I love it when things just line up :D
 
-- Arm trigger
-- Arm stopper
-- Internal switch
-- Sticker 
+Whilst the arm was originally spring mounted, unforunately the spring mechanism was part of the guts of the original toy which I had removed so I had to come up with an alternative. On inspection, there were a few nubs on the inside of the chasis and on the arm socket which I could just fit a small rubber band around so this worked great. 
+
+On testing the arm though, I found it's travel was a bit too much. Before, it used to feed money into the mouth, so it needed to go pretty high, where as now I really just wanted it to stop at body level. Looking inside the the arms shoulder cover, I noticed this is where they limited this before with another nub to stop the arm traveling too far. To limit this further then, I drilled a small hole a little further in and JB Welded a small nylon shaft to act as a new nub.
+
+With the arm sitting where I wanted it, and suitbly springy, the final touch was to change the old "£" sign printed on the hand, to a questionmark which I did by printing onto some sticker vinyl and cut it out by hand.
 
 ### The Head
 - Servo Mount
