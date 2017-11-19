@@ -13,6 +13,10 @@ tags:
 
 If you are a regular [MagPi magazine](https://www.raspberrypi.org/magpi/){:external} subscriber, you'll know in issue 57 they had their most popular giveaway with the [Google AIY Project Voice Kit](https://aiyprojects.withgoogle.com/voice){:external}. Unfortunately, I was one of those unlucky people not to get my hands one. After seeing all the fun everyone was having on twitter though, I decided to do what I do best and make my own. Now, if you know me at all by now, you know I like my retro tech, so for this project, rather than just creating a plain old box for it I decided to repurpose another beloved 80s toy of mine, my Mr Money moneybox. The result? Hilarious :D
 
+[![Mr Money 1](/media/outrun/44.jpg)](/media/outrun/44.jpg)
+[![Mr Money 2](/media/outrun/45.jpg)](/media/outrun/45.jpg)
+{:.gallery .margin-bottom-none}
+
 <div class="video">
     <iframe width="480" height="270" src="https://www.youtube.com/embed/PXWlnc-Qcwg?feature=oembed" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -22,63 +26,103 @@ If you are a regular [MagPi magazine](https://www.raspberrypi.org/magpi/){:exter
 ### The Core
 To start with, I carefully opened up my Mr Money money bank and removed all the insides to leave me with the basic shell. The inside surface of the base was pretty uneven, so I started by cutting a circular piece of acrylic to place on top of this to give a nice clean surface on which I could mount all the internals components.
 
-[PICS]
+[![The Core 1](/media/mrmoney/01.jpg)](/media/mrmoney/01.jpg)
+[![The Core 2](/media/mrmoney/02.jpg)](/media/mrmoney/02.jpg)
+[![The Core 3](/media/mrmoney/03.jpg)](/media/mrmoney/03.jpg)
+[![The Core 4](/media/mrmoney/04.jpg)](/media/mrmoney/04.jpg) 
+{:.gallery}
 
 Given the limited internal space, my only choice was going to be a [Raspberry Pi Zero](https://shop.pimoroni.com/products/raspberry-pi-zero-w){:external}. Thankfully the new "W" versions have wifi built in, so this allowed me to leave the USB port free for a [USB microphone](https://shop.pimoroni.com/products/mini-usb-microphone){:external}.
 
 Even using a Pi Zero, placement of the Pi was still pretty tight, so the only real option was to mount it centrally. I knew I was going to need space either side for cables and things, so this dictated that it would need to face front to back. To fix into place I used some nylon stand offs and stacked the [Speaker pHat](https://shop.pimoroni.com/products/speaker-phat){:external} on top. On top of this, I added an extra plate to allow me to zip tie the mic to it, which I connected to the Pi via a short [micro USB to USB female cable](https://www.ebay.co.uk/itm/Male-Micro-USB-Cable-to-female-USB-2-0-OTG-Adapter-Android-Tablet-Phone-PDA-PC/182843667522?epid=1252697875&hash=item2a9254f442:g:vAwAAOSwXrdZ6eDJ){:external}. Finally, a short [right angled micro USB extension cable](http://www.ebay.co.uk/itm/USB-Micro-5P-Female-to-5P-Male-Left-Right-Down-Up-Angled-Extension-Cable-Adapter/322653983953?hash=item4b1fad14d1:m:mGl0TaHyLj1JS6NXLCk7A0g){:external} was fed out the back to act as a USB power connector. 
 
-[PICS]
+[![The Core 5](/media/mrmoney/05.jpg)](/media/mrmoney/05.jpg)
+[![The Core 6](/media/mrmoney/06.jpg)](/media/mrmoney/06.jpg)
+[![The Core 7](/media/mrmoney/07.jpg)](/media/mrmoney/07.jpg)
+[![The Core 8](/media/mrmoney/08.jpg)](/media/mrmoney/08.jpg)
+{:.gallery}
 
 ### The Arm
 If you are familiar with the original Mr Money, you'll know his arm was spring mounted to feed money into the money bank. Well, this seemed a prime candidate to convert into the button to trigger the AIY into action.
 
 Looking inside, there was already an attachment to the arm socket with a little nub which triggered a switch from before (though it wasn't permanently attached so I JB Welded it) which luckily was at just about the same height as the top plate, so re-cutting a new top plate with a "wing" created a perfect mounting position for a micro switch. I love it when things just line up :D
 
-[PICS]
+[![The Arm 1](/media/mrmoney/42.jpg)](/media/mrmoney/42.jpg)
+[![The Arm 2](/media/mrmoney/09.jpg)](/media/mrmoney/09.jpg)
+[![The Arm 3](/media/mrmoney/10.jpg)](/media/mrmoney/10.jpg)
+[![The Arm 4](/media/mrmoney/11.jpg)](/media/mrmoney/11.jpg)
+[![The Arm 5](/media/mrmoney/43.jpg)](/media/mrmoney/43.jpg)
+{:.gallery}
 
 Whilst the arm was originally spring mounted, unfortunately the spring mechanism was part of the guts of the original toy which I had removed so I had to come up with an alternative. On inspection, there were a few nubs on the inside of the chassis and on the arm socket which I could just fit a small rubber band around so this worked great. 
 
-[PICS]
+[![The Arm 6](/media/mrmoney/12.jpg)](/media/mrmoney/12.jpg)
+[![The Arm 7](/media/mrmoney/13.jpg)](/media/mrmoney/13.jpg)
+{:.gallery}
 
 On testing the arm though, I found its travel was a bit too much. Before, it used to feed money into the mouth, so it needed to go pretty high, whereas now I really just wanted it to stop at body level. Looking inside the arms shoulder cover, I noticed this is where they limited this before with another nub to stop the arm traveling too far. To limit this further then, I drilled a small hole a little further in and JB Welded a small nylon shaft to act as a new nub.
 
-[PICS]
+[![The Arm 8](/media/mrmoney/14.jpg)](/media/mrmoney/14.jpg)
+[![The Arm 9](/media/mrmoney/15.jpg)](/media/mrmoney/15.jpg)
+[![The Arm 10](/media/mrmoney/41.jpg)](/media/mrmoney/41.jpg)
+{:.gallery}
 
 With the arm sitting where I wanted it, and suitably springy, the final touch was to change the old "£" sign printed on the hand, to a question mark which I did by printing a replacement onto some sticker vinyl and cutting it out by hand.
 
-[PICS]
+[![The Arm 11](/media/mrmoney/16.jpg)](/media/mrmoney/16.jpg)
+[![The Arm 12](/media/mrmoney/17.jpg)](/media/mrmoney/17.jpg)
+[![The Arm 13](/media/mrmoney/18.jpg)](/media/mrmoney/18.jpg)
+[![The Arm 14](/media/mrmoney/19.jpg)](/media/mrmoney/19.jpg)
+{:.gallery}
 
 ### The Head
 Another key function of the original toy is the opening and closing head which I really wanted to have move as it talks. 
 
 To achieve this I chose to use a micro servo. I figured out a mounting point for the servo in the neck area on the underside of the head. To hold the servo in place I created a bracket on the laser cutter and fixed it to the head. To make the head actually move, I attached some paper clip wire from the servo horn through a small hole I made in the upper part of the head. Now when the servo moves it pushes and pulls the head open and closed.
 
-[PICS]
+[![The Head 1](/media/mrmoney/20.jpg)](/media/mrmoney/20.jpg)
+[![The Head 2](/media/mrmoney/21.jpg)](/media/mrmoney/21.jpg)
+[![The Head 3](/media/mrmoney/22.jpg)](/media/mrmoney/22.jpg)
+[![The Head 4](/media/mrmoney/23.jpg)](/media/mrmoney/23.jpg)
+[![The Head 5](/media/mrmoney/24.jpg)](/media/mrmoney/24.jpg)
+{:.gallery}
 
 One element I wanted to add was some kind of status LED to see what state the Pi was in. The AIY code already accommodates a status LED, so all I had to do was plumb it in. To keep it on theme, I thought I'd attached this to the head as a kind of antenna. To do this, I drilled a hole, then hot glued the LED in to place and ran wires down the next into the body compartment for wiring up later. To help limit the brightness of the LED a resistor was added in line with the LED.
 
-[PICS]
+[![The Head 6](/media/mrmoney/25.jpg)](/media/mrmoney/25.jpg)
+[![The Head 7](/media/mrmoney/26.jpg)](/media/mrmoney/26.jpg)
+[![The Head 8](/media/mrmoney/27.jpg)](/media/mrmoney/27.jpg)
+{:.gallery}
 
 Another element I liked from the original toy was the moving tongue, however I couldn't find a way to incorporate this (did I mention space was tight?) so unfortunately I just had to cut it down and glue it in to place so I could at least keep the aesthetic.
 
-[PICS]
+[![The Head 9](/media/mrmoney/28.jpg)](/media/mrmoney/28.jpg)
+[![The Head 10](/media/mrmoney/29.jpg)](/media/mrmoney/29.jpg)
+{:.gallery}
 
 ### The Speaker
 As mentioned already, to allow the little guy to talk I decided to use the speaker pHat from Pimoroni. This does come with a speaker, however it isn't the loudest so I decided to replace the speaker with another one I had. To be honest, the new speaker wasn't much better spec'd, however I was able to wedge it against the base which made it reverberate much better when everything was closed up.
 
-[PICS]
+[![The Wiring 1](/media/mrmoney/30.jpg)](/media/mrmoney/30.jpg)
+[![The Wiring 2](/media/mrmoney/31.jpg)](/media/mrmoney/31.jpg)
+{:.gallery}
 
 ### The Wiring
 With all the components now in place it was just a case of wiring them up. To do this I used a [Pico Hat Hacker](https://shop.pimoroni.com/products/pico-hat-hacker){:external}, another Pimoroni special. So as not to interfere with the other components though I decided to mount it to the bottom of the Pi, rather than between the stacked pHat's as is custom.
 
-[PICS]
+[![The Wiring 3](/media/mrmoney/35.jpg)](/media/mrmoney/35.jpg)
+[![The Wiring 4](/media/mrmoney/36.jpg)](/media/mrmoney/36.jpg)
+[![The Wiring 5](/media/mrmoney/37.jpg)](/media/mrmoney/37.jpg)
+[![The Wiring 6](/media/mrmoney/38.jpg)](/media/mrmoney/38.jpg)
+{:.gallery}
 
 I wired the button and the servo as per the [pinout used by the official Voicehat](https://pinout.xyz/pinout/voice_hat){:external}.
 
 For the servo, I wanted to power this from the Pi itself so that I didn't need an extra power supply. Given its only one micro servo this isn't too much of a problem, but I wanted to put a precaution in place to try and prevent any current dips and spikes. For this I created a mini breakout board with a large capacitor bridging the power and ground lines so when the servo starts or stalls, it can pull or push a spike of current from the cap, rather than the Pi.
 
-[PICS]
+[![The Wiring 7](/media/mrmoney/39.jpg)](/media/mrmoney/39.jpg)
+[![The Wiring 8](/media/mrmoney/40.jpg)](/media/mrmoney/40.jpg)
+{:.gallery}
 
 ## The Code
 With all the hardware side complete, it was time to move on to the code side of things.
@@ -386,6 +430,10 @@ And with that, we should have our little guy speaking in a much more suitable pi
 This was actually meant to be a pretty quick build for me, but it ended up being quite a big mod, however I'm really happy with the result and I'm glad I persisted with the requirements of the moving head and pitch shifted voice. 
 
 **Full disclosure** I actually started this project a while ago, and got stumped with the code and only just finished it recently. Unfortunately the AIY code has changed a bit since I started so some of the steps might not be immediately copy and paste-able, but I hope it at least gives you a good starting point if you do end up trying it for yourself.
+
+[![Mr Money 1](/media/outrun/44.jpg)](/media/outrun/44.jpg)
+[![Mr Money 2](/media/outrun/45.jpg)](/media/outrun/45.jpg)
+{:.gallery .margin-bottom-none}
 
 <div class="video">
     <iframe width="480" height="270" src="https://www.youtube.com/embed/PXWlnc-Qcwg?feature=oembed" frameborder="0" allowfullscreen></iframe>
