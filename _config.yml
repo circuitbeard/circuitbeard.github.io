@@ -33,7 +33,7 @@ url: https://circuitbeard.co.uk
 baseurl: ""
 
 # Define the number of posts to display per page
-paginate: 5
+paginate: 3
 
 #
 # !! You don't need to change any of the configuration flags below !!
