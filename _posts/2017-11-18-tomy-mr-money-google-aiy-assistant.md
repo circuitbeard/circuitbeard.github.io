@@ -13,8 +13,8 @@ tags:
 
 If you are a regular [MagPi magazine](https://www.raspberrypi.org/magpi/){:external} subscriber, you'll know in issue 57 they had their most popular giveaway with the [Google AIY Project Voice Kit](https://aiyprojects.withgoogle.com/voice){:external}. Unfortunately, I was one of those unlucky people not to get my hands one. After seeing all the fun everyone was having on twitter though, I decided to do what I do best and make my own. Now, if you know me at all by now, you know I like my retro tech, so for this project, rather than just creating a plain old box for it I decided to repurpose another beloved 80s toy of mine, my Mr Money moneybox. The result? Hilarious :D
 
-[![Mr Money 1](/media/outrun/44.jpg)](/media/outrun/44.jpg)
-[![Mr Money 2](/media/outrun/45.jpg)](/media/outrun/45.jpg)
+[![Mr Money 1](/media/mrmoney/44.jpg)](/media/mrmoney/44.jpg)
+[![Mr Money 2](/media/mrmoney/45.jpg)](/media/mrmoney/45.jpg)
 {:.gallery .margin-bottom-none}
 
 <div class="video">
@@ -431,8 +431,8 @@ This was actually meant to be a pretty quick build for me, but it ended up being
 
 **Full disclosure** I actually started this project a while ago, and got stumped with the code and only just finished it recently. Unfortunately the AIY code has changed a bit since I started so some of the steps might not be immediately copy and paste-able, but I hope it at least gives you a good starting point if you do end up trying it for yourself.
 
-[![Mr Money 1](/media/outrun/44.jpg)](/media/outrun/44.jpg)
-[![Mr Money 2](/media/outrun/45.jpg)](/media/outrun/45.jpg)
+[![Mr Money 1](/media/mrmoney/44.jpg)](/media/mrmoney/44.jpg)
+[![Mr Money 2](/media/mrmoney/45.jpg)](/media/mrmoney/45.jpg)
 {:.gallery .margin-bottom-none}
 
 <div class="video">
