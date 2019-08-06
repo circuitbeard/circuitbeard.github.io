@@ -18,17 +18,17 @@
 .social-links__link {
 
     @include font-size(20px, 20px);
-    color: rgba(255,255,255,.4);
+    color:white;
 
     @include hocus {
-        color: white;
+        color: $brand-color-yellow;
     }
 
 }
 
 .copyright {
     @include font-size(10px, 10px);  
-    color: darken($brand-color-teal, 10%);
+    color: white;
     text-transform: uppercase;
 }
 
@@ -47,7 +47,9 @@
 
 .post__content {
     padding: $global-spacing-unit-small;
-    background-color: white;
+    color: white;
+    background-color: $brand-color-grey-darker;
+    overflow-x: hidden;
 
     @media screen and (min-width: 48.5em){
         padding: $global-spacing-unit;
@@ -56,21 +58,33 @@
 }
 
 .post__date {
+    font-family: 'M41_LOVEBIT';
     text-transform: uppercase;
-    color: $brand-color-grey-dark;
-    opacity: .5;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .post__heading {
     text-transform: uppercase;
+}
 
-    a {
-        color: $text-color;
+a .post__heading {
+    color: white;
 
-        @include hocus {
-            color: $brand-color-teal;
+    @include transition(color .25s ease);
+}
+
+a {
+    @include hocus {
+        .post__heading {
+            color: $brand-color-yellow;
         }
     }
+}
+
+.post--summary .post__heading {
+    margin-bottom: 0;
 }
 
 .share {
@@ -82,13 +96,13 @@
         color: $brand-color-grey;
 
         @include hocus {
-            color: $brand-color-teal;
+            color: $brand-color-yellow;
         }
     }
 }
 
 .comments {
-    background-color: #f5f5f5;
+    background-color: $brand-color-grey-darker;
     padding: $global-spacing-unit-small;
 
     @media screen and (min-width: 48.5em){
@@ -154,7 +168,7 @@ pre[class*="language-"] {
 
 .pagination {
     margin: $global-spacing-unit-small;
-    background-color: rgba(255,255,255,.1);
+    background-color: $brand-color-grey-darker;
 
     @include clearfix();
 
@@ -174,7 +188,7 @@ pre[class*="language-"] {
     width: 50%;
 
     @include font-size(16px, 16px);   
-    @include transition(background-color .25s ease);
+    @include transition(background-color .25s ease, color .25s ease);
 
     @media screen and (min-width: 458.5em){
         @include font-size(20px, $global-spacing-unit-large);  
@@ -182,12 +196,28 @@ pre[class*="language-"] {
     }
 
     @include hocus {
-        color: white;
-        background-color: $brand-color-teal;
+        color: $brand-color-grey-darker;
+        background-color: white;
     }
 }
 
 .pagination__next {
     float: right;
     text-align: right;
+}
+
+.tweet-me {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: $brand-color-yellow;
+    color: $brand-color-grey-darker;
+    font-weight: bold;
+
+    @include transition(background-color .25s ease);
+
+    @include hocus {
+        color: $brand-color-grey-darker;
+        background-color: white;
+    }
 }

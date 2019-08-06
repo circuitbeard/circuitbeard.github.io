@@ -7,12 +7,14 @@ layout: default
     <img class="post__img" src="{{ page.masthead }}" alt="" />
     {% endif %}
     <div class="post__content">
-        <div class="post__date">{{ page.date | date: "%B %e, %Y" }}</div>
+        <div class="post__date">{{ page.date | date: "%d.%m.%Y" }}</div>
         <h1 class="post__heading h2">{{ page.title }}</h1>
         <div class="post__body trim">
             {{ content }}
         </div>
-        {% include share.html %}
+        {% include share.html %}   
+        <hr />
+        <p style="text-align: center;margin-bottom: 10px;">Something you'd like to ask or comment on? Connect with me on Twitter. <br /><a href="https://twitter.com/intent/tweet?text=Hey+@bytesizearcade" target="_blank" class="tweet-me"><i class="mdi mdi-twitter"></i> Tweet Me</a></a></p>
+    
     </div>
-	{% include disqus.html %}
 </article>

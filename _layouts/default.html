@@ -17,7 +17,7 @@
         <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
         <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
         
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/prism/prism-xonokai.css" />
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/materialdesignicons/materialdesignicons.min.css" />
@@ -50,8 +50,8 @@
         
         <header class="header">
             <a href="{{ site.baseurl }}/" class="header__logo">
-                <img src="{{ site.baseurl }}/img/cb_sml.png" />
-                <span class="header__logo-text">Circuitbeard</span>
+                {% include logo.html %}
+                <span class="header__logo-text">CIRCUITBEARD</span>
             </a>
             <a href="#" class="nav__toggle">
                 <i class="mdi mdi-menu nav__toggle-icon--open"></i>
@@ -62,7 +62,7 @@
         <aside class="sidebar">
             <a href="{{ site.baseurl }}/" class="sidebar__logo">
                 {% include logo.html %}
-                <span class="sidebar__logo-text">Circuitbeard</span>
+                <span class="sidebar__logo-text">CIRCUITBEARD</span>
             </a>
             <nav class="sidebar__nav">
                 {% include main-nav.html %}
@@ -70,12 +70,11 @@
             <div class="sidebar__bottom">
                 <ul class="social-links">
                     <li class="social-links__item"><a href="http://twitter.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-twitter"></i></a></li>
-                    <li class="social-links__item"><a href="https://www.facebook.com/circuitbeard" class="social-links__link"><i class="mdi mdi-facebook"></i></a></li>
                     <li class="social-links__item"><a href="http://instagram.com/circuitbeard/" class="social-links__link"><i class="mdi mdi-instagram"></i></a></li>
                     <li class="social-links__item"><a href="https://www.youtube.com/c/circuitbeard" class="social-links__link"><i class="mdi mdi-youtube-play"></i></a></li>
                     <li class="social-links__item"><a href="http://github.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-github-circle"></i></a></li>
                 </ul>
-                <p class="copyright">&copy; Circuitbeard {{ 'now' | date: "%Y" }}</p>
+                <p class="copyright">&copy; CIRCUITBEARD {{ 'now' | date: "%Y" }}</p>
             </div>
         </aside>
         
